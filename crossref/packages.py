@@ -416,18 +416,31 @@ CANONICAL_SUFFIX_MAP = {
 }
 
 
-def generate_ti_opn(ti_base_part, ti_pkg_cell, ti_pin_val=None, is_automotive=False):
+def generate_ti_opn(ti_base_part, ti_pkg_cell, ti_pin_val=None, is_automotive=False,
+                    prefer_canonical=None):
     """Append the package/pin suffix to a TI base part number, and Q1 for auto.
-    Falls back to returning the base part if no suffix rule is known."""
+    When the TI part is offered in several packages (e.g. ESD451 = DFN0603 'DPLR'
+    AND DFN1006 'DPYR'), pick the orderable that matches the COMPETITOR's package
+    (prefer_canonical) so a DFN0603 competitor gets DPLR, not DPYR."""
     base = str(ti_base_part or "").strip()
     if not base:
         return base
     codes, _ = ti_canonical_set(ti_pkg_cell, ti_pin_val)
     suffix = None
-    for c in codes:
-        if c in CANONICAL_SUFFIX_MAP:
-            suffix = CANONICAL_SUFFIX_MAP[c]
-            break
+    # 1) exact competitor-package match  2) same body, any pin  3) deterministic
+    if prefer_canonical and prefer_canonical in codes and prefer_canonical in CANONICAL_SUFFIX_MAP:
+        suffix = CANONICAL_SUFFIX_MAP[prefer_canonical]
+    if suffix is None and prefer_canonical:
+        pbody = prefer_canonical.rsplit("_", 1)[0]
+        for c in sorted(codes):
+            if c.rsplit("_", 1)[0] == pbody and c in CANONICAL_SUFFIX_MAP:
+                suffix = CANONICAL_SUFFIX_MAP[c]
+                break
+    if suffix is None:
+        for c in sorted(codes):
+            if c in CANONICAL_SUFFIX_MAP:
+                suffix = CANONICAL_SUFFIX_MAP[c]
+                break
     # if base already ends with the suffix or is a full orderable OPN, keep it
     opn = base
     if suffix and not base.upper().endswith(suffix):

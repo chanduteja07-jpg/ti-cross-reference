@@ -424,7 +424,8 @@ def find_alternatives(comp_specs, ti_df=None, top_n=3):
     top = (qualifying if qualifying else deduped)[:top_n]
     for r in top:
         r["opn"] = generate_ti_opn(r["base"], r["ti_pkg"], ti_pin_val=r.get("ti_pin"),
-                                   is_automotive=(comp["_auto"]))
+                                   is_automotive=(comp["_auto"]),
+                                   prefer_canonical=comp["_canonical"])
     return top
 
 
