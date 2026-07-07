@@ -1,0 +1,10 @@
+# caches & scratch — NOT the data (data/*.csv must ship for the app to work)
+__pycache__/
+*.pyc
+data/_digikey_master*.pkl
+preview_*.html
+server.log
+nohup.out
+_cross*.json*
+_index.json
+precompute_chunk.py

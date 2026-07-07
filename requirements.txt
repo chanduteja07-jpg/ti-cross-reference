@@ -1,0 +1,6 @@
+flask>=2.0
+pandas>=1.3
+openpyxl>=3.0
+python-calamine>=0.2
+xlrd>=2.0
+gunicorn>=21.0

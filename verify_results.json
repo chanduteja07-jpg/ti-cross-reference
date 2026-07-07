@@ -1,0 +1,307 @@
+{
+  "n_parts": 160,
+  "n_processed": 155,
+  "n_lookup_failures": 5,
+  "lookup_failures": [
+    [
+      "D5V0Z1B2LP-7B",
+      "Diodes",
+      "lookup returned None"
+    ],
+    [
+      "934059000000",
+      "Nexperia",
+      "lookup returned None"
+    ],
+    [
+      "934060000000",
+      "Nexperia",
+      "lookup returned None"
+    ],
+    [
+      "934065000000",
+      "Nexperia",
+      "lookup returned None"
+    ],
+    [
+      "934070000000",
+      "Nexperia",
+      "lookup returned None"
+    ]
+  ],
+  "total_alts": 437,
+  "parts_with_zero_alts": 0,
+  "tier_counts": {
+    "P": 376,
+    "null": 14,
+    "S": 20,
+    "Q": 27
+  },
+  "hard_filter_violations": [],
+  "tier_mismatches": [],
+  "ranking_violations": [],
+  "zener_leaks": [],
+  "suspicious_top_picks": [
+    {
+      "comp_part": "SMF4L17CAQ-7",
+      "top_alt": "ESD601",
+      "tier": "P",
+      "score": 5900.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "SMF4L18CAQ-7",
+      "top_alt": "ESD601",
+      "tier": "P",
+      "score": 6900.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "SMF4L24CAQ-7",
+      "top_alt": "ESD701",
+      "tier": "P",
+      "score": 6900.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "SMF4L33CAQ-7",
+      "top_alt": "ESD801",
+      "tier": "P",
+      "score": 5900.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "SMF4L40CAQ-7",
+      "top_alt": "ESD801",
+      "tier": "P",
+      "score": 5900.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "SMF4L12CAQ-7",
+      "top_alt": "ESD501",
+      "tier": "P",
+      "score": 6900.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "SMF4L14CAQ-7",
+      "top_alt": "ESD501",
+      "tier": "P",
+      "score": 5900.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "SMF4L15CAQ-7",
+      "top_alt": "ESD501",
+      "tier": "P",
+      "score": 5200.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "SMF4L20CAQ-7",
+      "top_alt": "ESD601",
+      "tier": "P",
+      "score": 5900.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "SMF4L11CAQ-7",
+      "top_alt": "ESD501",
+      "tier": "P",
+      "score": 5900.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "SMF4L16CAQ-7",
+      "top_alt": "ESD601",
+      "tier": "P",
+      "score": 5900.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "SMF4L22CAQ-7",
+      "top_alt": "ESD701",
+      "tier": "P",
+      "score": 5900.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "SMF4L26CAQ-7",
+      "top_alt": "ESD701",
+      "tier": "P",
+      "score": 5900.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "SMF4L36CAQ-7",
+      "top_alt": "ESD801",
+      "tier": "P",
+      "score": 6900.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "SMF4L13CAQ-7",
+      "top_alt": "ESD501",
+      "tier": "P",
+      "score": 5900.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "SMAJ15CAQ-13-F",
+      "top_alt": "ESD501",
+      "tier": "P",
+      "score": 5200.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "SMAJ16CAQ-13-F",
+      "top_alt": "ESD601",
+      "tier": "P",
+      "score": 5900.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "SMAJ18CAQ-13-F",
+      "top_alt": "ESD601",
+      "tier": "P",
+      "score": 6900.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "SMAJ20CAQ-13-F",
+      "top_alt": "ESD601",
+      "tier": "P",
+      "score": 5900.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "SMAJ22CAQ-13-F",
+      "top_alt": "ESD701",
+      "tier": "P",
+      "score": 5900.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "SMAJ24CAQ-13-F",
+      "top_alt": "ESD701",
+      "tier": "P",
+      "score": 6900.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "SMAJ33CAQ-13-F",
+      "top_alt": "ESD801",
+      "tier": "P",
+      "score": 5900.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "SMBJ36(C)AQ-13-F",
+      "top_alt": "ESD801",
+      "tier": "P",
+      "score": 6900.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "SMAJ12CAQ-13-F",
+      "top_alt": "ESD501",
+      "tier": "P",
+      "score": 6900.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "SZ1SMA26AT3G",
+      "top_alt": "TVS2701",
+      "tier": "P",
+      "score": 5913.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "PESD1LIN,115",
+      "top_alt": "ESD501",
+      "tier": "P",
+      "score": 5200.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "PESD1LIN,135",
+      "top_alt": "ESD501",
+      "tier": "P",
+      "score": 5200.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "PESD1LIN",
+      "top_alt": "ESD501",
+      "tier": "P",
+      "score": 5200.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    },
+    {
+      "comp_part": "PESD1LINZ",
+      "top_alt": "ESD501",
+      "tier": "P",
+      "score": 5200.0,
+      "reasons": [
+        "direction mismatch (comp=unidirectional, ti=bidirectional)"
+      ]
+    }
+  ]
+}

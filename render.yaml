@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: ti-cross-reference
+    runtime: python
+    plan: starter          # public URL that stays warm (no cold-start). 'free' also works but sleeps after 15 min idle.
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --workers 1 --threads 8 --timeout 180 --preload --bind 0.0.0.0:$PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+    autoDeploy: true
